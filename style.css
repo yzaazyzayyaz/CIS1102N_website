@@ -1,0 +1,91 @@
+/* css code for homepage and general body layout */
+
+body {
+  font-family: 'Inter Tight', sans-serif; 
+  font-weight: 150;
+  margin: 0;
+  padding: 0; 
+  background-image: linear-gradient(to bottom, #02004d, #110e8b, #5262c2, #afaad8, #fff4e6);
+  color: #fff4e6;
+}
+
+.headings {
+  font-family: 'Instrument Serif', serif;
+  font-size: 125px; 
+  margin-top: 0; 
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.port {
+  font-family: 'Instrument Serif', serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.homepagePt1 {
+  padding-top: 50px;
+  text-align: center;
+  color: #fff4e6;
+}
+
+.sub {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+  color: #fff4e6;
+}
+
+.symbol {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0;
+  font-size: 80px;
+}
+
+.text1 {
+  text-align: center;
+}
+
+.column { /* row 1 of icons linking to portfolios */
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(2, 0, 77, 0.6);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.row1, .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row1::after { /* row 1 of icons linking to portfolios */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row2::after { /* row 2 of icons linking to portfolios */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.icon1 {
+  width: 200px;
+  height: 200px;
+  padding: 0px;
+  margin-bottom: -60px;
+}
